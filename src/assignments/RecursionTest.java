@@ -1,7 +1,18 @@
 package assignments;
 
+import java.util.Scanner;
+
 public class RecursionTest {
-	public static boolean isPrime(int number){
+	public static boolean isPrime(){
+		System.out.println("Enter a # to check if it is prime");
+		Scanner scstdin = new Scanner(System.in);
+		String num = scstdin.nextLine();
+		while (num.equals("")){
+			System.out.println("Unable to detect a # Please enter a #");
+			num = scstdin.nextLine();
+		}
+		int number = Integer.parseInt(num);
+		
 		if (number == 1){
 			return false;
 		}

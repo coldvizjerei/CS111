@@ -3,7 +3,7 @@ package assignments;
 import java.util.Scanner;
 
 public class PigLatin {
-	public String PigLatin() {
+	public String PigLatinate() {
 		System.out.println("Enter a word to get the Pig Latin equivalent");
 		Scanner scstdin = new Scanner(System.in);
 
