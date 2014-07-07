@@ -19,37 +19,44 @@ public class Master {
 			}
 			
 			int intLine = Integer.parseInt(line);
+			ManageInput input = new ManageInput();
 			RecursionTest Recursion = new RecursionTest();
 			
 			switch (intLine){
 			case 1: 
 				PigLatin Latinator = new PigLatin();
-				String result = Latinator.PigLatinate();
+				System.out.println("Enter a word to get the Pig Latin equivalent");
+				String result = Latinator.PigLatinate(input.getInput());
 				System.out.println("Pig Latin Equivalent: " + result);
 				break;
 				
 			case 2:
-				if (Recursion.isPrime()){
+				System.out.println("Enter a # to check if it is prime");
+				String stringNum = input.getInput();
+				int num = input.stringToInt(stringNum);
+				
+				if (Recursion.isPrime(num)){
 					System.out.println("is a prime #");
 				}
 				else {
-					System.out.println("is not prime");
+					System.out.println("is not prime #");
 				}
 				break;
 				
 			case 3:
-				String base = scstdin.nextLine();
-				System.out.println(" = ");
+				System.out.println("Enter exponent's base");
+				String sBase = input.getInput();
+				double base = input.stringToDouble(sBase);
+				System.out.println("Enter the exponent");
+				String sExp = input.getInput();
+				int exp = input.stringToInt(sExp);
+				
+				System.out.println("(" + sBase + ")^(" + sExp + ") = " + Recursion.power(base, exp));
 				break;
 				
 			case 4: 
 				return;
 			}
-			
-			
-//			int basenumber = 2;
-//			int exponentnum = -4;
-//			IO.outputDoubleAnswer(pow(basenumber, exponentnum));
 		}
 	}
 }
