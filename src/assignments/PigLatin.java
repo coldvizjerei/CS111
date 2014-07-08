@@ -1,7 +1,5 @@
 package assignments;
 
-import java.util.Scanner;
-
 public class PigLatin {
 	public String PigLatinate(String word) {
 		//more error checks needed in case there are numbers in the input
