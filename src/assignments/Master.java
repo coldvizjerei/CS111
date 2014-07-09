@@ -17,7 +17,7 @@ public class Master {
 
 			System.out.println("\nChoose an option, or hit return to quit => ");
 			String line = scstdin.nextLine();
-			if (line.length() == 0) {
+			if (line.length() == 0){
 				return;
 			}
 
@@ -78,7 +78,7 @@ public class Master {
 				double[] data = DataAnalysis.getData(len);
 				
 				//sorting data
-				data = DataAnalysis.sort(len, data);
+				data = DataAnalysis.bubbleSort(len, data);
 								
 				System.out.println("Min value is: " + DataAnalysis.min(data));
 				System.out.println("Max value is: " + DataAnalysis.max(len, data));

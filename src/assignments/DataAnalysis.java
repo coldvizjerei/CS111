@@ -81,7 +81,7 @@ public class DataAnalysis {
 		return maxvalue;
 	}
 
-	public static double[] sort(int arraylength, double[] array){ 
+	public static double[] bubbleSort(int arraylength, double[] array){ 
 
 		for (int i = arraylength - 1; i >= 0; i--) 
 		{ 
