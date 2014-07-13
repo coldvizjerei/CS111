@@ -3,8 +3,7 @@ package assignments;
 import java.util.Scanner;
 
 public class Master {
-	public static void main(String[] args){
-		Scanner scstdin = new Scanner(System.in);
+	public static void main(String[] args){Scanner scstdin = new Scanner(System.in);
 		while(true){
 			//options here
 			System.out.println("\n1) PigLatinator");
