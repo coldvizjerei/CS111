@@ -1,6 +1,9 @@
-package assignments;
+package Control;
 
 import java.util.Scanner;
+import assignments.DataAnalysis;
+import assignments.PigLatin;
+import assignments.RecursionTest;
 
 public class MasterControl {
 	public static void main(String[] args){Scanner scstdin = new Scanner(System.in);

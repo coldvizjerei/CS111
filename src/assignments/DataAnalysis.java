@@ -1,5 +1,7 @@
 package assignments;
 
+import Control.ManageInput;
+
 public class DataAnalysis {
 	public static double[] getData(int len){
 		ManageInput input = new ManageInput();

@@ -1,4 +1,4 @@
-package assignments;
+package Control;
 
 import java.util.Scanner;
 
