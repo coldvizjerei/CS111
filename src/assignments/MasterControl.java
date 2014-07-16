@@ -2,7 +2,7 @@ package assignments;
 
 import java.util.Scanner;
 
-public class Master {
+public class MasterControl {
 	public static void main(String[] args){Scanner scstdin = new Scanner(System.in);
 		while(true){
 			//options here
